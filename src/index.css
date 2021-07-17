@@ -1,13 +1,94 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    margin: 0;
+    
+  }
+  
+  .top-pane {
+    background-color: hsl(225, 6%, 25%);
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  
+
+  .Filexplorer{
+    width: 14%;
+    float:left;
+    height: 780px;
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  }
+
+  .btchng{
+    background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10%;
+  width: 100%;
+  }
+
+  .btchng:hover {
+    background: #cc9ae0;
+    color: white;
+  }
+  
+  .pane {
+    height: 50vh;
+    width: 86%;
+
+    float:right;
+    display: flex;
+  }
+  
+  .editor-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    background-color: hsl(225, 73%, 48%);
+  }
+  
+  .editor-container.collapsed {
+    flex-grow: 0;
+  }
+  
+  .editor-container.collapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden !important;
+  }
+  
+  .expand-collapse-btn {
+    margin-left: .5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .editor-title {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(347, 74%, 49%);
+    color: white;
+    padding: .5rem .5rem .5rem 1rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+  
+
+
+
+
+  .CodeMirror {
+    height: 100% !important;
+  }
+  
+  .code-mirror-wrapper {
+    flex-grow: 1;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    overflow: hidden;
+  }
